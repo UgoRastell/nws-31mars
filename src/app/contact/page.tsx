@@ -31,7 +31,7 @@ export default function ContactPage() {
     return (
         <div className="p-8">
             <Toaster />
-            <h1 className="text-3xl font-bold mb-4">Contact</h1>
+            <h1 className="text-3xl font-bold mb-4">Contact Formulaire</h1>
             <form
                 onSubmit={handleSubmit}
                 className="max-w-md mx-auto space-y-4 bg-white p-6 rounded shadow"
