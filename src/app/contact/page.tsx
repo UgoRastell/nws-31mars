@@ -44,7 +44,7 @@ export default function ContactPage() {
                         type="text"
                         id="name"
                         name="name"
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
                         required
                     />
                 </div>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                         type="email"
                         id="email"
                         name="email"
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
                         required
                     />
                 </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                     <textarea
                         id="message"
                         name="message"
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
                         rows={4}
                         required
                     ></textarea>
