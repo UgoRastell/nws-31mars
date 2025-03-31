@@ -15,14 +15,12 @@ export async function submitContactForm(data: FormData) {
     const email = data.get("email")?.toString() || "";
     const message = data.get("message")?.toString() || "";
 
-    // Validation avec Zod
+
     const result = ContactFormSchema.safeParse({ name, email, message });
     if (!result.success) {
-        // Renvoie un tableau d'erreurs
         const errors = result.error.errors.map((e) => e.message);
         return errors;
     }
-    // Simulation d’un délai de 2 secondes
     await new Promise((resolve) => setTimeout(resolve, 2000));
     return true;
 }
